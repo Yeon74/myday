@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/static/css/main.1bfa97ec.css",
+    "main.js": "/static/js/main.bb2ace26.js",
+    "static/media/about_me.jpg": "/static/media/about_me.d2b7eb341791ee0fa1d6.jpg",
+    "static/media/afternoon.jpg": "/static/media/afternoon.2d284e9dd84ba32ebec9.jpg",
+    "static/media/morning.jpg": "/static/media/morning.dc379d77df0e5106e8bb.jpg",
+    "static/media/evening.jpg": "/static/media/evening.9d1813346495957a2b4d.jpg",
+    "static/media/night.jpg": "/static/media/night.e03810244625208d720b.jpg",
+    "index.html": "/index.html",
+    "main.1bfa97ec.css.map": "/static/css/main.1bfa97ec.css.map",
+    "main.bb2ace26.js.map": "/static/js/main.bb2ace26.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.1bfa97ec.css",
+    "static/js/main.bb2ace26.js"
+  ]
+}
