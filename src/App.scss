@@ -1,6 +1,8 @@
 *{ margin: 0; padding: 0;}
 
 
+
+
 :root {
   --main-bg: #fffaf4;
   --accent: #e57f4a;
@@ -12,7 +14,6 @@
   --radius-md: 18px;
   --radius-sm: 12px;
 }
-
 
 body {
   // background: url('./images/tu2.jpg') no-repeat center center fixed;
@@ -36,9 +37,9 @@ body {
   align-items: center;
   gap: 28px;
 
-  @media (max-width: 600px) {
-    max-width: 98vw;
-    padding: 18px 6vw 18px 6vw;
+  @media (max-width: 600px) { // 모바일 대응
+    max-width: 95vw;
+    padding: 18px 16px;
   }
 }
 
@@ -56,6 +57,10 @@ body {
     margin-bottom: 12px;
     letter-spacing: -0.01em;
     text-align: center;
+
+    @media (max-width: 600px) { // 모바일 대응
+      font-size: 1.5rem;
+    }
   }
 
   .logout-btn {
@@ -101,6 +106,10 @@ body {
     font-weight: 500;
     line-height: 1.6;
     letter-spacing: 0.01em;
+
+    @media (max-width: 600px) { // 모바일 대응
+      font-size: 1rem;
+    }
   }
 }
 
@@ -116,6 +125,10 @@ body {
   display: flex;
   gap: 10px;
   margin-bottom: 14px;
+
+  @media (max-width: 600px) { // 모바일 대응
+    flex-direction: column;
+  }
 
   input[type="text"] {
     flex: 1;
@@ -203,6 +216,13 @@ body {
       }
     }
   }
+
+  @media (max-width: 600px) { // 모바일 대응
+    li {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  }
 }
 
 .empty-msg {
@@ -226,25 +246,30 @@ body {
   box-shadow: 0 1px 8px #ffe2ca33;
   padding: 16px 14px;
   text-align: center;
-    float: left;
+  float: left;
+
+  @media (max-width: 600px) { // 모바일 대응
+    float: none;
+    margin: 0 auto 20px auto;
+    width: 90%;
+  }
 }
 
-
 .weather-box h3 {
-  margin: 1px 0;   /* 간격 줄임 */
+  margin: 1px 0;
   font-size: 1.05rem;
   font-weight: 600;
   color: #e57f4a;
-  line-height: 1;  /* 행간 */
+  line-height: 1;
 }
 
-  img {
-    margin: 12px 0;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-  }
-
+img {
+  margin: 12px 0;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 100%;
+}
 
 .time {
   font-size: 6rem;
@@ -257,6 +282,11 @@ body {
   margin-bottom: 18px;
   letter-spacing: 0.02em;
   text-align: center;
+
+  @media (max-width: 600px) { // 모바일 대응
+    font-size: 3rem;
+    padding: 10px;
+  }
 }
 
 .page-wrapper.with-weather {
@@ -264,21 +294,38 @@ body {
   justify-content: center;
   position: relative;
   margin-top: 40px;
+  flex-wrap: wrap;
+
+  @media (max-width: 600px) { // 모바일 대응
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
 .main-area {
   position: relative;
   display: inline-block;
+  width: 100%;
+  max-width: 420px;
+
+  @media (max-width: 600px) { // 모바일 대응
+    width: 95vw;
+  }
 }
 
 .weather-floating {
   position: absolute;
-  top: -100px;   // top에서 부터 높이
-  right: 10px; // MainPage 너비에 따라 조정
+  top: -100px;
+  right: 10px;
+
+  @media (max-width: 600px) { // 모바일 대응
+    position: static;
+    margin: 0 auto 20px auto;
+  }
 }
 
 .app {
-  min-height: 100vh; 
+  min-height: 100vh;
 }
 
 .app.bg-morning {
@@ -300,4 +347,3 @@ body {
   background: url('./images/night.jpg') no-repeat center center fixed;
   background-size: cover;
 }
-

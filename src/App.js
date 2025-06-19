@@ -46,26 +46,6 @@ const App = () => {
   }, []);
 
 
-  // return (
-  //   <div className="app">
-  //     <Time />
-  //     {
-  //       user ? (
-  //         <div className="page-wrapper with-weather">
-  //           <div className="main-area">
-  //             <MainPage user={user} onLogout={handleLogout} />
-  //             <div className="weather-floating">
-  //               <Weather />
-  //             </div>
-  //           </div>
-  //         </div>
-  //       ) : (
-  //         <LoginForm onLogin={handleLogin} />
-  //       )
-  //     }
-  //   </div>
-  // );
-
   return (
     <div className={`app ${bgClass}`}>
       <Time />
